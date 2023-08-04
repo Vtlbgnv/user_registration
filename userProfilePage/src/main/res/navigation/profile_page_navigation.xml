@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_page_navigation.xml"
+    app:startDestination="@id/userProfileFragment">
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.vtlbgnv.userprofilepage.ui.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_fragmentUserInfoPopUpp"
+            app:destination="@id/fragmentUserInfoPopUpp" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUserInfoPopUpp"
+        android:name="com.vtlbgnv.userprofilepage.ui.FragmentUserInfoPopUpp"
+        android:label="FragmentUserInfoPopUpp"
+        tools:layout="@layout/fragment_user_info_pop_up">
+        <action
+            android:id="@+id/action_fragmentUserInfoPopUpp_to_userProfileFragment2"
+            app:destination="@id/userProfileFragment"
+            app:popUpTo="@+id/fragmentUserInfoPopUpp"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

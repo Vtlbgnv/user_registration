@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userInitialFragment">
+
+    <fragment
+        android:id="@+id/userInitialFragment"
+        android:name="com.vtlbgnv.userinitial.ui.UserInitialFragment"
+        android:label="fragment_user_initial"
+        tools:layout="@layout/fragment_user_initial">
+        <action
+            android:id="@+id/action_userInitialFragment_to_userRegistrationFragment"
+            app:destination="@id/userRegistrationFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_profilePageNavigationGraph"
+            app:destination="@id/profile_page_navigation.xml" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRegistrationFragment"
+        android:name="com.vtlbgnv.userregistration.ui.UserRegistrationFragment"
+        android:label="UserRegistrationFragment"
+        tools:layout="@layout/fragment_user_registration" />
+    <include app:graph="@navigation/profile_page_navigation" />
+</navigation>

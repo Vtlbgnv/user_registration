@@ -1,0 +1,9 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">Enter your password</string>
+    <string name="Email">Enter your e-mail</string>
+    <string name="logInButton">Log in</string>
+    <string name="signUnButton">Sign up</string>
+    <string name="pageTitle">Authorization</string>
+</resources>

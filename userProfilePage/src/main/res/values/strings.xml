@@ -1,0 +1,5 @@
+<resources>
+    <string name="welcome_message">Hello, %1$s %2$s.\nYour date of birth is %3$s</string>
+    <string name="hello">Open massage</string>
+    <string name="closeFrag">Close</string>
+</resources>
